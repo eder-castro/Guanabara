@@ -7,13 +7,13 @@ print (f"{termo} => ", end = '')
 num = termo
 qtd = 10
 cont = 1
-soma = 10
+soma = 0 
 while (qtd != 0) :
-    while (cont < qtd):
+    soma += qtd
+    while (cont < soma):
         num += fator
         print (f"{num} => ", end = '')
         cont += 1
     print("PAUSA")
     qtd = int(input("Quantos termos mais? "))
-    soma += qtd
 print(f"Progressao finalizada com {soma} termos!")
